@@ -10,10 +10,18 @@
         <table>
             <tr>
                 <td>Nombre</td>
+                <td>Insignia</td>
+                <td>Medallas</td>
+                <td>Puntos</td>
+                <td>Rutas</td>
                 <td>Certificados</td>
             </tr>
             <tr ng-repeat="person in team.team">
                 <td>{{person.name}}</td>
+                <td><img src={{person.badges_img}} width=85px /></td>
+                <td>{{person.badges}}</td>
+                <td>{{person.point}}</td>
+                <td>{{person.trails}}</td>
                 <td>
                     <span ng-repeat="cer in person.certifications track by $index">
                         <img-cert cer="cer"></img-cert>
