@@ -4,14 +4,15 @@ var certTable = angular.module('certTable', []);
 certTable.controller('certTableController', function certTableController($scope, $http) {
     
     var team = {"team" : [
-                {'name': 'Mirko Yvancovich', 'certifications': ['Salesforce Certified Administrator', 'Salesforce Certified Platform App Builder', 'Salesforce Certified Service Cloud Consultant', 'Salesforce Certified Platform Developer I', 'Salesforce Certified OmniStudio Developer', 'Salesforce Certified Business Analyst'], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/ranger.png', 'badges': '141', 'point': '79,775', 'trails': '18'},
-                {'name': 'Nicolas Andres Seura Malla', 'certifications': ['Salesforce Certified Administrator', 'Salesforce Certified Platform App Builder', 'Salesforce Certified Platform Developer I', 'Salesforce Certified Associate'], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/expeditioner.png', 'badges': '87', 'point': '58,525', 'trails': '5'},
-                {'name': 'Tiago Sobreira', 'certifications': [], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/ranger.png', 'badges': '174', 'point': '104,450', 'trails': '23'},
-                {'name': 'Yan Silva', 'certifications': [], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/expeditioner.png', 'badges': '74', 'point': '39,225', 'trails': '7'},
-                {'name': 'Ramiro De Lorenzo', 'certifications': [], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/mountaineer.png', 'badges': '47', 'point': '31,450', 'trails': '2'},
-                {'name': '', 'certifications': [], 'badges_img': '', 'badges': '', 'point': '', 'trails': ''},
-                {'name': 'Melissa J. Melendez Zamora', 'certifications': [], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/explorer.png', 'badges': '9', 'point': '5,700', 'trails': '0'}
-            ]};
+        {'name': 'Claudio Cracco', 'certifications': ['Salesforce Certified Administrator', 'Salesforce Certified Advanced Administrator', 'Salesforce Certified Sales Cloud Consultant', 'Salesforce Certified Service Cloud Consultant'], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/ranger.png', 'badges': '163', 'point': '121,750', 'trails': '19'},
+        {'name': 'Mirko Yvancovich', 'certifications': ['Salesforce Certified Administrator', 'Salesforce Certified Platform App Builder', 'Salesforce Certified Service Cloud Consultant', 'Salesforce Certified Platform Developer I', 'Salesforce Certified OmniStudio Developer', 'Salesforce Certified Business Analyst'], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/ranger.png', 'badges': '141', 'point': '79,775', 'trails': '18'},
+        {'name': 'Nicolas Andres Seura Malla', 'certifications': ['Salesforce Certified Administrator', 'Salesforce Certified Platform App Builder', 'Salesforce Certified Platform Developer I', 'Salesforce Certified Associate'], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/expeditioner.png', 'badges': '87', 'point': '58,525', 'trails': '5'},
+        {'name': 'Tiago Sobreira', 'certifications': [], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/ranger.png', 'badges': '174', 'point': '104,450', 'trails': '23'},
+        {'name': 'Yan Silva', 'certifications': [], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/expeditioner.png', 'badges': '74', 'point': '39,225', 'trails': '7'},
+        {'name': 'Ramiro De Lorenzo', 'certifications': [], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/mountaineer.png', 'badges': '47', 'point': '31,450', 'trails': '2'},
+        {'name': 'Jose Ortiz Gomez', 'certifications': [], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/mountaineer.png', 'badges': '59', 'point': '29,675', 'trails': '5'},
+        {'name': 'Melissa J. Melendez Zamora', 'certifications': [], 'badges_img': 'https://res.cloudinary.com/trailhead/image/upload/public-trailhead/assets/images/ranks/explorer.png', 'badges': '9', 'point': '5,700', 'trails': '0'}
+    ]};
     $scope.team = team;
 });
 
