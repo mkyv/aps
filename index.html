@@ -62,13 +62,15 @@
                   x = rows[i].getElementsByTagName("TD")[n];
                   y = rows[i + 1].getElementsByTagName("TD")[n];
             
+                  xInt = parseInt(x.innerHTML.toLowerCase());
+                  yInt = parseInt(y.innerHTML.toLowerCase());
                   if (dir == "asc") {
-                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    if (xInt > yInt) {
                       shouldSwitch= true;
                       break;
                     }
                   } else if (dir == "desc") {
-                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    if (xInt < yInt) {
                       shouldSwitch = true;
                       break;
                     }
