@@ -4,30 +4,88 @@
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
         <script src="app.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </head>
     <body ng-controller="certTableController" style="background: whitesmoke;">
         <h1> Certificaciones (Beta-Preview)</h1>
-        <table border="1">
-            <tr>
-                <th>Nombre</th>
-                <th>Insignia</th>
-                <th>Medallas</th>
-                <th>Puntos</th>
-                <th>Rutas</th>
-                <th>Certificados</th>
-            </tr>
-            <tr ng-repeat="person in team.team">
-                <td>{{person.name}}</td>
-                <td><img src='{{person.badges_img}}' width=85px/> </td>
-                <td>{{person.badges}}</td>
-                <td>{{person.point}}</td>
-                <td>{{person.trails}}</td>
-                <td>
-                    <span ng-repeat="cer in person.certifications track by $index">
-                        <img-cert cer="cer"></img-cert>
-                    </span>
-                </td>
-            </tr>
+        <br>
+        <div class="mb-3 row">
+            <label for="button" class="col-sm-2 col-form-label">Ordenar por:</label>
+            <div class="col-sm-10">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary" onclick="sortTable(2)">Medallas</button>
+                    <button type="button" class="btn btn-primary" onclick="sortTable(3)">Puntos</button>
+                    <button type="button" class="btn btn-primary" onclick="sortTable(5)">Certificaciones</button>
+                </div>
+            </div>
+        </div>
+        <table border="1" class="table" id="teamTable">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Insignia</th>
+                    <th scope="col">Medallas</th>
+                    <th scope="col">Puntos</th>
+                    <th scope="col">Rutas</th>
+                    <th scope="col">#</th>
+                    <th scope="col">Certificaciones</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr ng-repeat="person in team.team">
+                    <td scope="row">{{person.name}}</td>
+                    <td><img src='{{person.badges_img}}' width=85px/> </td>
+                    <td>{{person.badges}}</td>
+                    <td>{{person.point}}</td>
+                    <td>{{person.trails}}</td>
+                    <td>{{person.certifications.length}}</td>
+                    <td>
+                        <span ng-repeat="cer in person.certifications track by $index">
+                            <img-cert cer="cer"></img-cert>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>  
         </table>
+        <script>
+            function sortTable(n) {
+              var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+              table = document.getElementById("teamTable");
+              switching = true;
+              dir = "asc"; 
+              while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 1; i < (rows.length - 1); i++) {
+                  shouldSwitch = false;
+                  x = rows[i].getElementsByTagName("TD")[n];
+                  y = rows[i + 1].getElementsByTagName("TD")[n];
+            
+                  if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                      shouldSwitch= true;
+                      break;
+                    }
+                  } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                      shouldSwitch = true;
+                      break;
+                    }
+                  }
+                }
+                if (shouldSwitch) {
+                  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                  switching = true;
+                  switchcount ++;      
+                } else {
+                  if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                  }
+                }
+              }
+            }
+        </script>
     </body>
 </html>
