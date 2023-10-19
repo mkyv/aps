@@ -37,7 +37,7 @@
                     <td scope="row">{{person.name}}</td>
                     <td><img src='{{person.badges_img}}' width=85px/> </td>
                     <td>{{person.badges}}</td>
-                    <td>{{person.point}}</td>
+                    <td>{{person.point | number:0}}</td>
                     <td>{{person.trails}}</td>
                     <td>{{person.certifications.length}}</td>
                     <td>
