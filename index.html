@@ -62,8 +62,8 @@
                   x = rows[i].getElementsByTagName("TD")[n];
                   y = rows[i + 1].getElementsByTagName("TD")[n];
             
-                  xInt = parseInt(x.innerHTML.toLowerCase());
-                  yInt = parseInt(y.innerHTML.toLowerCase());
+                  xInt = parseFloat(x.innerHTML.toLowerCase());
+                  yInt = parseFloat(y.innerHTML.toLowerCase());
                   if (dir == "asc") {
                     if (xInt > yInt) {
                       shouldSwitch= true;
