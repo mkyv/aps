@@ -72,15 +72,16 @@ function imgCertControler($scope,  $element, $attrs) {
             "Salesforce Certified AI Associate" : "https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/ai-associate.png?v=2",
             "Salesforce Certified Associate" : "https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Associate.png",
             'Salesforce Accredited Sales Professional' : 'https://drm--c.na114.content.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mu7&oid=00DF0000000gZsu&lastMod=1617694229000',
-            'Salesforce Certified B2C Commerce Developer' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mtx&oid=00DF0000000gZsu&lastMod=1617268258000',
-            'Salesforce Certified Field Service Consultant' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mte&oid=00DF0000000gZsu&lastMod=1617268211000',
-            'Salesforce Certified OmniStudio Consultant' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mta&oid=00DF0000000gZsu&lastMod=1617267580000',
-            'Salesforce Certified Integration Architect' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BB2ng&oid=00DF0000000gZsu&lastMod=1638349737000',
-            'Salesforce Certified Data Architect' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BB2nM&oid=00DF0000000gZsu&lastMod=1638349236000',
-            'Salesforce Certified Development Lifecycle and Deployment Architect' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BB2nR&oid=00DF0000000gZsu&lastMod=1638349485000',
-            'Salesforce Certified Sharing and Visibility Architect' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BB2nq&oid=00DF0000000gZsu&lastMod=1638349821000',
+            'Salesforce Certified B2C Commerce Developer' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/B2C-Commerce-Developer.png',
+            'Salesforce Certified Field Service Consultant' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Service-Cloud-Consultant.png',
+            'Salesforce Certified OmniStudio Consultant' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/OmniStudio-Consultant.png',
+            'Salesforce Certified Integration Architect' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/ID%20and%20Access%20Mgmt%20Architect.png',
+            'Salesforce Certified Data Architect' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Data%20Architect.png',
+            'Salesforce Certified Development Lifecycle and Deployment Architect' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/ID%20and%20Access%20Mgmt%20Architect.png',
+            'Salesforce Certified Sharing and Visibility Architect' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Application-Architect.png',
             'Salesforce Certified Identity and Access Management Architect' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BB2nb&oid=00DF0000000gZsu&lastMod=1638349650000',
-            'Salesforce Certified Tableau CRM and Einstein Discovery Consultant' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mu6&oid=00DF0000000gZsu&lastMod=1617274648000'
+            'Salesforce Certified Tableau CRM and Einstein Discovery Consultant' : 'https://www.salesforceben.com/wp-content/uploads/2021/07/SF-Certified_Tableau-CRM-and-Einstein-Discovery-Consultant-1024x1005.png'
+
         };
     $scope.logoSf = '';
     $scope.$watch('cer', function () {
