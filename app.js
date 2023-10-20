@@ -71,7 +71,7 @@ function imgCertControler($scope,  $element, $attrs) {
             "Salesforce Certified Tableau CRM & Einstein Discovery Consultant" : "https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Tableau-CRM-and-Einstein-Discovery-Consultant.png",
             "Salesforce Certified AI Associate" : "https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/ai-associate.png?v=2",
             "Salesforce Certified Associate" : "https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Associate.png",
-            'Salesforce Accredited Sales Professional' : 'https://drm--c.na114.content.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mu7&oid=00DF0000000gZsu&lastMod=1617694229000',
+            'Salesforce Accredited Sales Professional' : 'Picture 2.png',
             'Salesforce Certified B2C Commerce Developer' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/B2C-Commerce-Developer.png',
             'Salesforce Certified Field Service Consultant' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Service-Cloud-Consultant.png',
             'Salesforce Certified OmniStudio Consultant' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/OmniStudio-Consultant.png',
@@ -79,7 +79,7 @@ function imgCertControler($scope,  $element, $attrs) {
             'Salesforce Certified Data Architect' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Data%20Architect.png',
             'Salesforce Certified Development Lifecycle and Deployment Architect' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/ID%20and%20Access%20Mgmt%20Architect.png',
             'Salesforce Certified Sharing and Visibility Architect' : 'https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Application-Architect.png',
-            'Salesforce Certified Identity and Access Management Architect' : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BB2nb&oid=00DF0000000gZsu&lastMod=1638349650000',
+            'Salesforce Certified Identity and Access Management Architect' : 'Picture 1.png',
             'Salesforce Certified Tableau CRM and Einstein Discovery Consultant' : 'https://www.salesforceben.com/wp-content/uploads/2021/07/SF-Certified_Tableau-CRM-and-Einstein-Discovery-Consultant-1024x1005.png'
 
         };
