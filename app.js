@@ -71,7 +71,7 @@ function imgCertControler($scope,  $element, $attrs) {
             "Salesforce Certified Tableau CRM & Einstein Discovery Consultant" : "https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Tableau-CRM-and-Einstein-Discovery-Consultant.png",
             "Salesforce Certified AI Associate" : "https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/ai-associate.png?v=2",
             "Salesforce Certified Associate" : "https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Associate.png",
-            'Salesforce Accredited Sales Professional', : 'https://drm--c.na114.content.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mu7&oid=00DF0000000gZsu&lastMod=1617694229000',
+            'Salesforce Accredited Sales Professional' : 'https://drm--c.na114.content.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mu7&oid=00DF0000000gZsu&lastMod=1617694229000',
             'Salesforce Certified B2C Commerce Developer', : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mtx&oid=00DF0000000gZsu&lastMod=1617268258000',
             'Salesforce Certified Field Service Consultant', : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mte&oid=00DF0000000gZsu&lastMod=1617268211000',
             'Salesforce Certified OmniStudio Consultant', : 'https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000A5Mta&oid=00DF0000000gZsu&lastMod=1617267580000',
